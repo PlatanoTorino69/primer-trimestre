@@ -1,6 +1,18 @@
-Fuente de alimentación: La fuente de alimentación de un ordenador es la parte que se encarga de suministrar electricidad a todos los componentes, se utiliza adaptando la energia de la red eléctrica a los dispositivos a los que va a alimentar. Hay diferentes tipos.
-Placa base: Una placa base es el componente común donde se conectan todos los componentes de un dispositivo electronico. Es una parte fundamental para montar cualquier computadora personal de escritorio o portátil o algún dispositivo. Tiene instalados una serie de circuitos integrados, entre los que se encuentra el circuito integrado auxiliar (chipset), que sirve como centro de conexión entre el microprocesador (CPU), la memoria de acceso aleatorio (RAM), las ranuras de expansión y otros dispositivos. 
-CPU: La unidad central de procesamiento (CPU) o procesador es un componente del hardware de un computador telefonos inteligentes u otros dispositivos programables. Su trabajo es interpretar las instrucciones de un programa informático mediante la realización de las operaciones básicas aritméticas, lógicas y externas (provenientes de la unidad de entrada/salida). Su diseño y avance ha variado notablemente desde su creación, aumentando su eficiencia y potencia, y reduciendo aspectos como el consumo de energía y el costo. 
-RAM: La memoria de acceso aleatorio (RAM)  es una memoria de almacenamiento a corto plazo. El sistema operativo de ordenadores u otros dispositivos utiliza la memoria RAM para almacenar de forma temporal todos los programas y sus procesos de ejecución. En la RAM se cargan todas las instrucciones que ejecuta la CPU y otros componentes de el ordenador, además de contener los datos que manipulan los distintos programas. Hay diferentes tipos.
+Fuente de alimentación: La fuente de alimentación de un ordenador es la parte que se encarga de suministrar electricidad a todos los componentes,
+se utiliza adaptando la energia de la red eléctrica a los dispositivos a los que va a alimentar. Hay diferentes tipos.
+Placa base: Una placa base es el componente común donde se conectan todos los componentes de un dispositivo electronico.
+Es una parte fundamental para montar cualquier computadora personal de escritorio o portátil o algún dispositivo.
+Tiene instalados una serie de circuitos integrados, entre los que se encuentra el circuito integrado auxiliar (chipset),
+que sirve como centro de conexión entre el microprocesador (CPU), la memoria de acceso aleatorio (RAM), las ranuras de expansión y otros dispositivos. 
+CPU: La unidad central de procesamiento (CPU) o procesador es un componente del hardware de un computador,
+telefonos inteligentes u otros dispositivos programables.
+Su trabajo es interpretar las instrucciones de un programa informático mediante la realización de las operaciones básicas aritméticas,
+lógicas y externas (provenientes de la unidad de entrada/salida).
+Su diseño y avance ha variado notablemente desde su creación,
+aumentando su eficiencia y potencia, y reduciendo aspectos como el consumo de energía y el costo. 
+RAM: La memoria de acceso aleatorio (RAM)  es una memoria de almacenamiento a corto plazo.
+El sistema operativo de ordenadores u otros dispositivos utiliza la memoria RAM para almacenar de forma temporal
+todos los programas y sus procesos de ejecución. En la RAM se cargan todas las instrucciones que ejecuta la CPU y otros componentes de el ordenador,
+además de contener los datos que manipulan los distintos programas. Hay diferentes tipos.
 Memoria SRAM: RAM estática, memoria estática de acceso aleatorio.
 Memoria DRAM: RAM dinámica, memoria dinámica de acceso aleatorio.
