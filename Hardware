@@ -16,3 +16,18 @@ todos los programas y sus procesos de ejecución. En la RAM se cargan todas las 
 además de contener los datos que manipulan los distintos programas. Hay diferentes tipos.
 Memoria SRAM: RAM estática, memoria estática de acceso aleatorio.
 Memoria DRAM: RAM dinámica, memoria dinámica de acceso aleatorio.
+Tarjeta Gráfica: Una tarjeta gráfica es un componente electrónico que se encarga de procesar la información que le llega al dispositivo para, posteriormente,
+mostrarla al usuario visualmente mediante un monitor.
+Lo más común es hablar de tarjetas gráficas de ordenadores, donde juegan un papel importante, sobre todo en el mundo del gaming y de la edición de vídeos.
+Hay dos tipos de tarjetas gráficas, las integradas que van acopladas al propio procesador como una parte de este,
+y las dedicadas que puedes conectar a parte en el ordenador como si fueran una unidad externa en la que la CPU puede apoyarse para tareas
+especialmente exigentes.
+Disco Duro: Una unidad de disco duro es el componente en hardware donde se almacena todo su contenido digital.
+Sus documentos,imágenes, música, vídeos, programas, preferencias de aplicaciones y sistema operativo representan el contenido digital
+almacenado en un disco duro. Hay dos tipos de discos duros los HDD y los SSD. Un HDD es un dispositivo de almacenamiento antiguo que emplea platos mecánicos
+y un cabezal móvil de lectura/escritura para acceder a los datos.
+Los SSD son unidades más nuevas y veloces que almacenan los datos en chips de memoria de acceso instantáneo.
+Refrigeracion: La refrigeraion es un sistema de un ordenador el cual se encarga de eliminar todo el calor residual producido por los componentes del ordenador,
+para mantener los componentes dentro de los límites de temperatura de funcionamiento permitidos.
+Hay dos tipos de refigeraciones, las que son con ventiladores y las líquidas que funcionan de tal manera que el sistema mantiene los componentes del ordenador 
+a una temperatura estable gracias a un circuito de tubos por cuyo interior circula líquido, generalmente agua.
