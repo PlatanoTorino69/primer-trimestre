@@ -1,3 +1,4 @@
+El segundo proyecto que hice con Arduino es este, y trata de lo siguiente:
 Las clavijas digitales del Arduino pueden leer dos estados. cuándo hay voltaje en una clavija de entrada, y cuándo no.
 A este tipo de entrada se le llama digital (o, a veces , binaria, de dos estados). Estos estados se conocen comúnmente como HIGH y LOW. HIGH es como decir
 "Aquí hay voltaje", y LOW significa "No hay voltaje". Cuando pones una clavija de OUTPUT en posicion HIGH usando la instruccion digitalWrite(), la estás encendiendo.
