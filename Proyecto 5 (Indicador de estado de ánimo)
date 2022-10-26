@@ -1,3 +1,4 @@
+Indicador de estado de ánimo:
 Para el indicador de estado de animo necesitamos un potenciometro, un servomotor, un brazo motor y 2 condensadores polarizado.
 Para que el circuito funcione se conecta el potenciometro a 3 cables, uno positivo otro negativo y el ultimo que le proporciona informacion
 ademas de un condensador polarizado con el positivo mirando hacia arriba y el negativo hacia abajo.
