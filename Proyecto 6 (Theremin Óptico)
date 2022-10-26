@@ -1,0 +1,29 @@
+Theremin Óptico
+Para poder diseñar este proyecto son necesarios un piezo, un foto transistor y una resistencia de 10kOhm.
+El piezo estará conectado a dos cables, uno negativo y otro que sale desde la toma de tierra.
+Despues el fototransistor estará conectado a 2 cables, uno en positivo y otro de informacion, y tambien estará conectado a una resistencia de 10kOhm en negativo.
+Para que funcione es necesario este codigo:
+int sensorValue;
+int sensorLow = 1023;
+int sensorHigh = 0;
+const int ledPin = 13;
+void setup() { 
+  pinMode(ledPin, OUTPUT);
+  digitalWrite(ledPin, HIGH);
+  while (millis() < 5000) {
+    sensorValue = analogRead(A0);
+    if (sensorValue > sensorHigh) {
+      sensorHigh = sensorValue;
+    }
+    if (sensorValue < sensorLow) {
+      sensorLow = sensorValue;
+    }
+  }
+  digitalWrite(ledPin, LOW);
+}
+void loop() {
+  sensorValue = analogRead(A0);
+  int pitch = map(sensorValue,sensorLow,sensorHigh, 50, 4000);
+  tone(8,pitch,20);
+  delay(10);
+}
