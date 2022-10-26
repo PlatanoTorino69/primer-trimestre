@@ -1,0 +1,28 @@
+Para el indicador de estado de animo necesitamos un potenciometro, un servomotor, un brazo motor y 2 condensadores polarizado.
+Para que el circuito funcione se conecta el potenciometro a 3 cables, uno positivo otro negativo y el ultimo que le proporciona informacion
+ademas de un condensador polarizado con el positivo mirando hacia arriba y el negativo hacia abajo.
+El servomotor se conecta a tres cables que son tierra con un cable negativo, señal, con un cable de informacion y potencia con un cable positivo
+y un condensador polarizado.
+El codigo para que funcione es el siguiente:
+#include <Servo.h>
+Servo myServo;
+int const potPin = A0;
+int potVal;
+int angle;
+void setup() {
+
+    myServo.attach(9);
+
+    Serial.begin(9600);
+}
+void loop() {
+
+    potVal = analogRead(potPin);
+    Serial.print("potVal: ");
+    Serial.print(potVal);
+angle = map(potVal, 0, 1023, 0, 179);
+Serial.print(", angle: ");
+Serial.println(angle);
+    myServo.write(angle);
+    delay(15);
+}
