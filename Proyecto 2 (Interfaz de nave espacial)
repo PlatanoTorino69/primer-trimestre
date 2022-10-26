@@ -1,8 +1,41 @@
-El segundo proyecto que hice con Arduino es este, y trata de lo siguiente:
-Las clavijas digitales del Arduino pueden leer dos estados. cuándo hay voltaje en una clavija de entrada, y cuándo no.
-A este tipo de entrada se le llama digital (o, a veces , binaria, de dos estados). Estos estados se conocen comúnmente como HIGH y LOW. HIGH es como decir
-"Aquí hay voltaje", y LOW significa "No hay voltaje". Cuando pones una clavija de OUTPUT en posicion HIGH usando la instruccion digitalWrite(), la estás encendiendo.
-Mide el voltaje entre la clavija y la toma de tierra; obtendrás 5 voltios. Cuando pones una clavija de OUTPUT en LOW, la estás apagando.
-Las clavijas digitales de un Arduino pueden actuar como entrada y como salida. En tu código, las configurarás en función de cuál quieres que sea su función.
-Cuando las clavijas son de salida, puedes comprobar si un interruptor está siendo permutado o no. Ya que las clavijas 0 y 1 se usan para comunicar con 
-el ordenador, es mejor empezar por la clavija 2.
+Interfaz de nave espacial:
+Para hacer el primer proyecto se necesita 1 pulsador, 3 leds, 3 resistencias de 220 ohmios y una resistencia de 10 kiloohmios.
+Para encender las luces led ponemos las resistencias de 220 ohmios en la salida negativa del led y los cables que dan la corriente en la parte positiva.
+Para que el interuptor funcione ponemos una resistencia de 10 kiloohmios en la parte negativa con un cable en la parte negativa y uno adicional.
+Con el circuito encendido y cuando no estemos pulsando el interruptor se encendera el led verde y cuando pulsemos el pulsador los otros leds
+que son de color rojo se iran intercalando con un delay de 2,5 segundos entre las dos mientras que el verde estará apagado.
+Para hacerlo funcionar necesitamos el siguiente codigo:
+const int LED1 = 3;
+const int LED2 = 4;
+const int LED3 = 5;
+const int IN1 = 2;
+const int IN2 = 7;
+int Estado1 = 0;
+void setup(){
+pinMode(LED1, OUTPUT);
+pinMode(LED2, OUTPUT);
+pinMode(LED3, OUTPUT);
+pinMode(IN1, INPUT);
+pinMode(IN2, INPUT);
+}
+
+void loop()
+{
+Estado1 = digitalRead(IN1) && digitalRead(IN2);
+
+if (Estado1==HIGH)
+{
+digitalWrite(LED1, HIGH);
+  delay(250);
+  digitalWrite(LED2, HIGH);
+  delay(250);
+    digitalWrite(LED3, HIGH);
+delay(250);
+} 
+  else {
+    digitalWrite(LED1, LOW);
+     digitalWrite(LED2, LOW);
+		digitalWrite(LED3, LOW);
+    delay(250);      
+  }
+}
