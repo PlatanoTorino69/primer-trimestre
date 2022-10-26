@@ -1,3 +1,4 @@
+Molinillo motorizado:
 Para que el molinillo motorizado funcione se necesita 1 interruptor,1 motor, una bateria de 9v, un broche de bateria, un transitor mosfet, un diodo y una resistencia de 10kOhm.
 Para hacerlo funcionar se conecta la bateria al positivo y al negativo, el motor se conecta al positivo y el negativo al diodo
 junto con un cable de informacion conectado al mosfet.
