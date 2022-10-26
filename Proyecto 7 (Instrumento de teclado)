@@ -1,0 +1,29 @@
+Instrumento de teclado:
+Para hacer que funcione este proyecto se necesitan 4 pulsadores, 2 resistencias de 10kOhm, 1 de 1 MegOhm y 1 de 220 Ohm y un piezo.
+Al piezo se le van a conectar dos cables, uno negativo y otro desde la toma de tierra.
+Los pulsadores se van a conectar en paralelo y cada va a tener una resistencia diferente.
+Los pulsadores van a estar todos conectados a un cable de informacion el cual en el codigo se va a definir el sonido que van a hacer cada uno de los pulsadores.
+El codigo necesario para que funcione es el siguiente:
+int notes[] = {262,294,330,349};
+               void setup() {
+                 Serial.begin(9600);
+               }
+               void loop() {
+                 int keyVal = analogRead(A0);
+                 Serial.println(keyVal);
+                 if(keyVal == 1023){
+                   tone(8, notes[0]);
+                 }
+                 else if(keyVal >= 990 && keyVal <= 1010){
+                   tone(8, notes[1]);
+                 }
+                 else if(keyVal >= 505 && keyVal <= 515){
+                   tone(8, notes[2]);
+                 }
+                 else if(keyVal >= 5 && keyVal <= 10){
+                   tone(8, notes[3]);
+                 }
+                         else{
+                           noTone(8);
+                         }
+                         }
